@@ -1,6 +1,14 @@
 # Campus Student Microservice
 
-### Student API
+### Run Locally
+1) Run MongoDB in local or change connection string to a remote instance 
+
+2) Run MS CampusStudentApplication.
+
+3) Call the API
+
+
+### Microservice API
 
 Run `CampusStudentApplication`, the service will be listen on the port `8085`
 ```
@@ -21,15 +29,14 @@ POST http://localhost:8085/students
 
 ### MongoDB
 
-Connect from the client
-```
-mongodb://campus:campus@localhost:27017/?authSource=admin
-```
-
-### Run Docker Services
 ```
 cd ./docker
 docker-compose up -d
+```
+
+Connect from the client
+```
+mongodb://campus:campus@localhost:27017/?authSource=admin
 ```
 
 ### Links
